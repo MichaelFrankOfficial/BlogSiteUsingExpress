@@ -1,0 +1,29 @@
+{
+  "name": "blogsiteusingexpress",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.18.2",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "^4.16.2",
+    "morgan": "~1.9.0",
+    "serve-favicon": "~2.4.5"
+  },
+  "description": "Blogsite with express",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MichaelFrankOfficial/BlogSiteUsingExpress.git"
+  },
+  "author": "Michael Frank",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MichaelFrankOfficial/BlogSiteUsingExpress/issues"
+  },
+  "homepage": "https://github.com/MichaelFrankOfficial/BlogSiteUsingExpress#readme"
+}

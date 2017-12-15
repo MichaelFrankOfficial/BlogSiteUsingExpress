@@ -1,0 +1,53 @@
+/*Navigation Styling*/
+/*Responsive CSS for Phones & Tablets*/
+body{
+    width: 100%;
+    margin:0;
+    padding: 0;
+    background-color:#4B515D !important;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.2em;
+    color: rgb(97, 215, 236) !important;
+}
+h2{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4em;
+    color: rgb(87, 195, 214) !important;
+}
+p{
+    color: rgb(192, 192, 192);
+}
+.row-blog-form{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+.navbar-brand {
+    margin-right: 5em !important;
+}
+    @media (min-width: 1200px){
+    .navbar-nav > li{
+        padding-left:3em;
+        padding-right:3em;
+    }
+    .marginHomePos{
+    margin-top: 2em;
+    }
+    .container-fluid{
+        margin-top: 2em;
+    }
+    .positionHomeContent{
+        margin-right: 4em !important;
+    }
+    .contact-mailing-info{
+        width: 30%;
+    }
+    .email-form-row{
+        width: 50%;
+    }
+    .btnSubmitEmail{
+        width: 12em;
+    }
+}
+
