@@ -20,7 +20,7 @@ router.post("/", (req, res, next) => {
         repo.addPost(newPost);
     }
 
-    res.redirect("/");
+    res.redirect("/blog");
 });
 
 module.exports = router;

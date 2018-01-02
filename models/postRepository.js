@@ -3,7 +3,7 @@ const fs = require('fs'),
     filePath = path.join(__dirname, "data"),
     fileName = path.join(filePath, "postData.json");
 
-let postList = [{ permalink: "post-1", title: "Post 1", postContent: "<h1>This is a test/h1>", author: "Michael Frank" }];
+let postList = [];
 
 let loadPosts = () => {
     fs.readFile(fileName, "utf8", (err, data) => {
@@ -11,6 +11,9 @@ let loadPosts = () => {
             console.error("Error loading data file: " + err.message);
             throw err;
         } else {
+            if( data === '' ){
+                return;
+            }
             let newPostsArr = JSON.parse(data);
             if (newPostsArr.length > 0) {
                 postList = newPostsArr;

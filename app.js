@@ -12,6 +12,8 @@ var gaming = require('./routes/gaming');
 var gear = require('./routes/gear');
 var tomorrow = require('./routes/tomorrow');
 var blog = require('./routes/blog');
+var newPost = require('./routes/newPost');
+var register = require('./routes/register');
 
 var app = express();
 
@@ -34,6 +36,8 @@ app.use('/gaming', gaming);
 app.use('/gear', gear);
 app.use('/tomorrow', tomorrow);
 app.use('/blog', blog);
+app.use('/newPost', newPost);
+app.use('/register', register);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
