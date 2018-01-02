@@ -4,35 +4,183 @@ body{
     width: 100%;
     margin:0;
     padding: 0;
-    background-color:#4B515D !important;
+    background-image: url("/images/blackBackTest.jpg")
+}
+.homeTitle{
+    padding-bottom:.2em;
+    font-family: 'Amatic SC', cursive; 
+    text-align:center; 
+    font-size:4em;
+    color: #59b5fa !important;
+}
+.media-heading{
+    font-size: 2em;
+    padding: .5em;
+    border-bottom-color: rgb(37, 39, 43);
+    border-bottom: solid;
+}
+.card{
+    background-color: #4B515D !important;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+legend{
+    color: #54697E !important;
+}
+form{
+    margin-bottom: 2em;
 }
 h1{
     font-family: 'Oswald', sans-serif;
     font-size: 2.2em;
-    color: rgb(97, 215, 236) !important;
+    color: #54697E !important;
+    text-align: center;
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.4em;
     color: rgb(87, 195, 214) !important;
+    text-align: center;
 }
 p{
     color: rgb(192, 192, 192);
 }
 .well{
-    background-color: white;
+    background-color: #4B515D;
     border: solid;
     border-color: black;
     border-width: .2em;
     margin-bottom: 1.5em;
     padding: 1.5em;
+    border-radius: .5em;
 }
 .row-blog-form{
     margin-left: 0 !important;
     margin-right: 0 !important;
 }
-
+.header-font {
+    font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fd1506;
+  }
+  .contactInfoBadge{
+      margin-left: .1em;
+  }
+  .fa-facebook{
+      color:#3b5998;
+  }
+  .fa-linkedin{
+      color:#0077B5;
+  }
+  .fa-twitter{
+      color:#4099FF;
+  }
+  .fa-google{
+      color:#d34836;
+  }
+  .bg-primary {
+   background-color: #000 !important;
+  }
+  
+  .bg-circle
+  {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    padding: 14px 4px;
+    color: #ececec;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .bg-circle-outline
+  {
+    width: 50px;
+    height: 50px;
+    color:smoke;
+    padding: 8px 2px;
+    border: 2px solid;
+    border-color: smoke;
+    border-radius: 50%;
+  }
+  
+  
+  .bg-circle a, a:hover, .media a:focus
+  {
+    text-decoration: none !important;
+    outline: none;
+    color: #ececec;
+  }
+  .bg-circle-outline a, a:hover, .media a:focus
+  {
+    text-decoration: none !important;
+    outline: none;
+    color: #ececec;
+  }
+  .footer {
+      background: #EDEFF1;
+      height: auto;
+      padding-bottom: 30px;
+      position: relative;
+      width: 100%;
+      border-bottom: 1px solid #CCCCCC;
+      border-top: 1px solid #DDDDDD;
+  }
+  .footer p {
+      margin: 0;
+  }
+  .footer img {
+      max-width: 100%;
+  }
+  .footer h3 {
+      border-bottom: 1px solid #BAC1C8;
+      color: #54697E;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      padding: 40px 0 10px;
+      text-transform: uppercase;
+  }
+  .footer ul {
+      font-size: 13px;
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+      margin-top: 15px;
+      color: #7F8C8D;
+  }
+  .footer ul li a {
+      padding: 0 0 5px 0;
+      display: block;
+  }
+  .footer a {
+      color: #78828D
+  }
     @media (min-width: 1200px){
+    body{
+        width: 100%;
+        margin:0;
+        padding: 50px;
+        background-image: url("/images/blackBackTest.jpg")
+    }
+    legend{
+        color: #54697E !important;
+    }
+    h1{
+        color: #54697E !important;
+    }
+    h2{
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1.4em;
+        color: rgb(87, 195, 214) !important;
+        text-align: left;
+    }
+    .homeTitle{
+        padding-bottom:.5em;
+        font-family: 'Amatic SC', cursive; 
+        text-align:center; 
+        font-size:4em;
+        color: #59b5fa !important;
+    }
     .navbar-nav > li{
         padding-left:3em;
         padding-right:3em;
@@ -58,6 +206,16 @@ p{
     }
     .main{
         margin-top: 70px;
+    }
+    .media-heading{
+        font-size: 2em;
+        padding: .5em;
+        border-bottom-color: rgb(37, 39, 43);
+        border-bottom: solid;
+    }
+    .card{
+        background-color: #4B515D !important;
+        padding-bottom: .5em;
     }
     
     h1.title { 
@@ -87,7 +245,6 @@ p{
     
     .main-login{
         background-color: #fff;
-       /* shadows and rounded borders */
        -moz-border-radius: 2px;
        -webkit-border-radius: 2px;
        border-radius: 2px;
@@ -171,6 +328,104 @@ p{
         color: #fff;
         background-color:#59b5fa;
     }
+    /* FOOTER STYLING! */
+    .header-font {
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #fd1506;
+      }
+      .contactInfoBadge{
+          margin-left: 2em;
+      }
+      .fa-facebook{
+          color:#3b5998;
+      }
+      .fa-linkedin{
+          color:#0077B5;
+      }
+      .fa-twitter{
+          color:#4099FF;
+      }
+      .fa-google{
+          color:#d34836;
+      }
+      .bg-primary {
+       background-color: #000 !important;
+      }
+      
+      .bg-circle
+      {
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        padding: 14px 4px;
+        color: #ececec;
+        text-align: center;
+        border-radius: 50%;
+      }
+      
+      .bg-circle-outline
+      {
+        width: 50px;
+        height: 50px;
+        color:smoke;
+        padding: 8px 2px;
+        border: 2px solid;
+        border-color: smoke;
+        border-radius: 50%;
+      }
+      
+      
+      .bg-circle a, a:hover, .media a:focus
+      {
+        text-decoration: none !important;
+        outline: none;
+        color: #ececec;
+      }
+      .bg-circle-outline a, a:hover, .media a:focus
+      {
+        text-decoration: none !important;
+        outline: none;
+        color: #ececec;
+      }
+      .footer {
+          background: #EDEFF1;
+          height: auto;
+          padding-bottom: 30px;
+          position: relative;
+          width: 100%;
+          border-bottom: 1px solid #CCCCCC;
+          border-top: 1px solid #DDDDDD;
+      }
+      .footer p {
+          margin: 0;
+      }
+      .footer img {
+          max-width: 100%;
+      }
+      .footer h3 {
+          border-bottom: 1px solid #BAC1C8;
+          color: #54697E;
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 27px;
+          padding: 40px 0 10px;
+          text-transform: uppercase;
+      }
+      .footer ul {
+          font-size: 13px;
+          list-style-type: none;
+          margin-left: 0;
+          padding-left: 0;
+          margin-top: 15px;
+          color: #7F8C8D;
+      }
+      .footer ul li a {
+          padding: 0 0 5px 0;
+          display: block;
+      }
+      .footer a {
+          color: #78828D
+      }
     
 }
 

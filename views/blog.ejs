@@ -5,16 +5,13 @@
             <% for(var i = 0; i < posts.length; i++){ %>
                 <div class="well">
                     <div class="media">
-                        <!-- <a class="pull-left" href="#">
-                            <img class="media-object" src="http://placekitten.com/150/150">
-                        </a> -->
                         <div class="media-body">
                             <h4 class="media-heading">
                                 <a href="/post/<%= posts[i].permalink %>">
                                     <%= posts[i].title %>
                                 </a>
                             </h4>
-                            <p class="text-right"><%= posts[i].author %></p>
+                            <p class="text-right">Author: <%= posts[i].author %></p>
                             <p>
                                 <%- posts[i].postContent %>
                             </p>
@@ -25,20 +22,8 @@
                                         <%= Date.now() %>
                                     </span>
                                 </li>
-                                <!-- <li>|</li>
-                                <span>
-                                    <i class="glyphicon glyphicon-comment"></i></span>
                                 <li>|</li>
                                 <li>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star-empty"></span>
-                                </li> -->
-                                <li>|</li>
-                                <li>
-                                    <!-- Use Font Awesome http://fortawesome.github.io/Font-Awesome/ -->
                                     <span>
                                         <i class="fa fa-facebook-square"></i>
                                     </span>
@@ -54,21 +39,6 @@
                     </div>
                 </div>
                 <% } %>
-<!--                     <div class="container-fluid">
-
-                        <% for(var i = 0; i < posts.length; i++){ %>
-                            <article>
-                                <h1>
-                                    <a href="/post/<%= posts[i].permalink %>">
-                                        <%= posts[i].title %>
-                                    </a>
-                                </h1>
-                                <div>
-                                    <%- posts[i].postContent %>
-                                </div>
-                            </article>
-                            <% } %>
-                    </div> -->
                     <h2>Add to Blog!</h2>
                     <form action="/newpost" method="POST">
                         <fieldset>
@@ -87,11 +57,11 @@
                                     <div class="form-group mb-2">
                                         <input class="form-control" type="password" name="passphrase" id="passphrase" autofocus="true" placeholder="Enter Your Passphrase">
                                     </div>
-                                    <div>
+                                    <div class="form-group mb-2">
                                         <textarea id="postContent" name="postContent"></textarea>
                                     </div>
-                                    <div>
-                                        <button class="btn btn-dark" type="submit">Post</button>
+                                    <div class="form-group mb-2 text-center">
+                                        <button class="btn btn-dark" type="submit" style="width:10em; ">Post</button>
                                     </div>
                                 </div>
                             </div>
